@@ -15,5 +15,5 @@ def romanToInt(str):
 
         return sum1
         
-
-print(romanToInt("LVIII"))
+io=input("Roman Number: ")
+print(romanToInt(io))
