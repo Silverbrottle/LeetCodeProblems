@@ -1,0 +1,11 @@
+def canJump(nums):
+    length=len(nums)
+    max_jump=0
+    for i in range(0,length):
+        if(i>max_jump):
+            return False
+        max_jump=max(max_jump,i+nums[i])    
+
+    return True
+
+print(canJump([3,2,1,0,4]))
